@@ -1,0 +1,720 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section
+	display: block
+$theme-color: #000
+$secondary-color: #003E52
+$theme-dark-color: #003e52
+$white: #fff
+$golden: #8a7420
+$gray: #666
+
+body, input, select, textarea, p
+	font-family:Arial, Helvetica, sans-serif
+	font-size:13px
+	color:$theme-color
+	line-height:130%
+h1
+	font-size:24px
+	color:$theme-dark-color
+	font-weight:normal
+	text-transform:uppercase
+	line-height:1
+	margin:0
+	letter-spacing:4px
+	font-family:"CallunaSansW01-Regular"
+h2
+	font-size:24px
+	color:$golden
+	line-height:1.1
+	font-weight:normal
+	margin:0 0 22px
+	font-family:"CallunaSansW01-Regular"
+h3
+	font-size:18px
+	color:$golden
+	line-height:1.4
+	margin:0
+	padding:0
+	font-family:"CallunaSansW01-Semibold 904946"
+h4
+	font-size:18px
+	color:$theme-dark-color
+	font-family:'NewBaskervilleW01-Itali'
+	line-height:1.2
+
+a
+	color:$golden 
+	&:hover:
+		color:#00536d 
+p
+	line-height:24px
+	margin:0 0 18px
+
+p.last-para
+	margin-bottom:0
+
+ul,li
+	list-style:none
+	margin:0
+	padding:0
+
+#header-wrap
+	background:#ebebea url(../images/header-bg.png) repeat-x
+
+#header
+	padding: 5px 0 0
+
+.logo
+	padding: 0 0 0 40px
+	width: 340px
+
+.info-right
+	color: $golden
+	font-family: "NewBaskervilleW01-Itali"
+	text-align: right
+	font-size: 21px
+	padding: 45px 0 0
+
+#nav-wrap
+	background: $white
+	border-top: 1px solid #cccccc
+	border-bottom: 1px solid #cccccc
+	margin-top: 8px
+	li
+		float: left
+		position: relative
+		margin-right: 29px
+		&:last-child
+			margin-right: 0
+		
+		&.active > a,
+		&:hover > a
+			background: $golden
+			color: $white
+		
+		> a:hover
+			background: $golden
+			color: $white
+		
+		&:hover > ul
+			display: block
+		
+		ul
+			display: none
+			position: absolute
+			left: 0
+			top: 100%
+			width: 209px
+			margin: 0
+			padding-top: 4px
+			z-index: 99
+			li
+				float: none
+				margin: 0 0 4px
+				a
+					display: block
+					background: url(../images/sub-nav-bg.png) repeat-y
+					padding: 10px 12px
+					span
+						display: block
+						background: url(../images/icon-right.png) right center no-repeat
+						padding-right: 10px
+						&:hover
+							background: url(../images/icon-right-hover.png) right center no-repeat
+						
+					
+				
+			
+		
+	
+	a
+		font-size: 12px
+		color: $theme-dark-color
+		text-transform: uppercase
+		display: inline-block
+		padding: 8px 16px
+		font-family: "CallunaSansW01-Semibold 904946"
+		&:hover
+			background: $golden
+			color: $white
+		
+	
+
+.title-wrap-outer
+	background: url(../images/title-wrap.png) left top repeat-x
+
+.title-wrap
+	background: url(../images/title-bg.png) center top no-repeat
+	margin: 0 0 10px
+
+.title-section
+	border-bottom: 1px dashed $golden
+	padding: 40px 30px 0
+	margin: 0 0 0 20px
+	min-height: 110px
+	&.news-title
+		padding: 40px 40px 0
+	
+
+.title-cover
+	background: none
+	.title-wrap
+		background: url(../images/title-corve.png) center top no-repeat
+		background-size: cover
+		-moz-background-size: cover
+	  -webkit-background-size: cover
+		-o-background-size: cover
+	
+	.title-section
+		min-height: 125px
+		padding: 50px 40px 0
+	
+
+#main
+	background: url(../images/main-bot.png) left bottom repeat-x
+	padding-bottom: 30px
+	min-height: 340px
+
+.link-section
+	font-family: 'CallunaSansW01-Regular'
+	li
+		margin: 0 0 5px
+	
+	a
+		display: block
+		padding: 12px 15px 10px
+		background: url(../images/sub-nav-bg.png) right top repeat-y
+		color: $theme-dark-color
+		text-transform: uppercase
+		font-family: "CallunaSansW01-Semibold 904946"
+		&:hover
+			background: $golden
+			color: $white
+		
+		> span:hover
+			background: url(../images/icon-right-hover.png) right 5px no-repeat
+		
+	
+	span
+		display: block
+		background: url(../images/icon-right.png) right 5px no-repeat
+		padding-right: 10px
+	
+
+.accordion-section
+	h3
+		text-transform: uppercase
+		font-size: 12px
+		margin: 0
+		padding: 0
+		line-height: 1.2
+		a
+			color: $secondary-color
+			text-transform: uppercase
+			display: block
+			padding: 12px 15px 10px
+			background: url(../images/sub-nav-bg.png) right top repeat-y
+			font-family: "CallunaSansW01-Semibold 904946"
+			margin: 0 0 4px
+			span
+				display: block
+				background: url(../images/icon-right.png) right 5px no-repeat
+				padding-right: 10px
+			
+			&.current
+				background: $golden
+				color: $white
+				margin: 0
+				span
+					background: url(../images/accordion-downword-white.png) right 5px no-repeat
+				
+			
+		
+	
+
+.accordion-info
+	display: none
+	background: #f6f6f6
+	padding: 15px 15px 10px
+	margin: 0 0 4px
+
+.accorion-links
+	li
+		padding: 0 0 12px
+		&.active a
+			background: url(../images/icon-right-green.png) right 5px no-repeat
+			color: $golden
+		
+	
+	a
+		color: $theme-dark-color
+		font-size: 14px
+		display: block
+		font-weight: bold
+		background: url(../images/icon-right.png) right 5px no-repeat
+		padding-right: 10px
+		font-family: "CallunaSansW01-Semibold 904946"
+		&:hover
+			background: url(../images/icon-right-green.png) right 5px no-repeat
+			color: $golden
+		
+	
+
+.small-link
+	padding: 0 0 25px
+	li
+		line-height: 1.2
+		padding: 0 0 10px
+	
+	a
+		color: $theme-dark-color
+		display: inline-block
+		font-size: 16px
+		background: url(../images/icon-right.png) right center no-repeat
+		padding-right: 10px
+		min-width: 170px
+		font-family: "CallunaSansW01-Semibold 904946"
+	
+
+.top-info
+	padding: 0 0 30px
+	p
+		color: $theme-dark-color
+		font-size: 20px
+		line-height: 1.5
+		font-family: "NewBaskervilleW01-Itali"
+	
+
+.article
+	padding: 0 0 20px
+
+.sub-title
+	border-bottom: 1px solid $golden
+	padding: 0 0 10px
+	margin: 0 0 10px
+
+.sidebar-right
+	border-top: 6px solid #188eef
+
+.photo img
+	width:100%
+	display:block
+
+.sidebar-section
+	background: url(../images/sidebar-section.png) no-repeat
+	background-size: 100% auto
+	min-height: 300px
+	padding: 25px 12px 0 30px
+	color: $white
+
+.sidebar-inner
+	border-top: 1px dashed $white
+	border-bottom: 1px dashed $white
+	padding: 15px 0 20px
+	p
+		color: $white
+		font-size: 18px
+		line-height: 1.3
+		margin-right: 20px
+		font-family: "CallunaSansW01-Semibold 904946"
+	
+
+.learn-more
+	font-weight: bold
+	color: $golden
+	font-family: 'Calluna Sans W01 Black'
+	&:hover
+		color: $golden
+		text-decoration: underline
+	
+
+.profile-main
+	padding-left: 23px
+
+#main.main-profile
+	padding-bottom:80px
+
+.profile-top-info
+	padding: 35px 0 0
+	h3
+		margin: 0 0 10px
+	
+	p
+		font-size: 16px
+	
+
+.profile-photo
+	border: 8px solid $golden
+	text-align: center
+	padding: 14px
+	margin: 30px 0 0
+	img
+		width: 100%
+		display: block
+		margin: 0 auto
+	
+
+#main.mh-700
+	min-height:700px
+
+.banner
+	position: relative
+	margin: 0 0 22px
+
+.banner-info
+	position: absolute
+	left: 122px
+	top: 35px
+	width: 475px
+	p
+		color: $theme-dark-color
+		font-size: 21px
+		line-height: 1.4
+		margin: 0
+		font-family: "NewBaskervilleW01-Itali"
+	
+
+.box-section
+	border-top: 6px solid #188eef
+	background: $secondary-color
+	padding: 25px 20px 35px 35px
+	color: $white
+	h4
+		color: $white
+		font-size: 21px
+		line-height: 1.2
+		font-family: "NewBaskervilleW01-BoldI"
+		margin: 0
+	
+	p
+		color: $white
+		line-height: 1.5
+		margin: 0 0 10px
+		font-size: 12px
+	
+	a
+		color: $golden
+		font-weight: bold
+		font-size: 12px
+		text-transform: uppercase
+		font-family: "Calluna Sans W01 Black"
+	
+
+.main-area
+	background: url(../images/main-area.png) repeat-y
+	padding: 30px 60px 40px
+	color: $theme-dark-color
+	font-size: 21px
+	line-height: 1.4
+	font-family: "NewBaskervilleW01-Itali"
+	margin: 0 0 35px
+
+.small-article
+	padding: 0 0 20px
+	p
+		color: $theme-color
+		line-height: 22px
+		margin: 0 0 4px
+	
+	h5
+		font-size: 13px
+		color: $theme-color
+		line-height: 1.2
+		font-weight: bold
+		margin: 0
+		font-family: Arial, Helvetica, sans-serif
+	
+	.date
+		display: block
+		font-size: 14px
+		color: $theme-dark-color
+	
+
+.link
+	font-family: "Calluna Sans W01 Black"
+	text-transform: uppercase
+	font-size: 12px
+	strong
+		font-weight: normal
+	
+
+.banner-contant
+	margin: 0 0 10px
+
+.form-section
+	background: url(../images/form-bg.png) right top repeat-y
+	padding: 35px 0 70px 200px
+	h4
+		font-size: 21px
+		margin: 0 0 35px
+	
+	label
+		display: block
+		color: $gray
+		font-size: 12px
+		&.error
+			color: #FF0000
+			margin: 0
+		
+	
+	.text-field
+		border: 1px solid #d0d2d3
+		padding: 4px
+		width: 222px
+		margin: 0 0 8px
+	
+	.field-full
+		border: 1px solid #d0d2d3
+		padding: 4px
+		width: 456px
+		margin: 0 0 8px
+	
+	.textarea
+		border: 1px solid #d0d2d3
+		padding: 4px
+		width: 314px
+		margin: 0 0 8px
+		height: 135px
+	
+	.field-small
+		width: 80px
+	
+
+.form-inner
+	width: 456px
+
+.require-txt
+	display: block
+	color: $theme-color
+	line-height: 1.2
+	margin: 0 0 10px
+	font-family: Arial, Helvetica, sans-serif
+	font-style: italic
+	font-size: 11px
+
+.field-wrap
+	padding: 0 0 10px
+
+.field-container
+	float: left
+	width: 222px
+	margin-right: 12px
+	&.right-section
+		margin-right: 0
+	
+
+.field-smll-wrap
+	float: left
+	width: 80px
+	margin-right: 12px
+
+.submit-btn
+	display: inline-block
+	background: url(../images/submit-btn.png) no-repeat
+	width: 71px
+	height: 30px
+	color: $white
+	text-align: center
+	font-weight: bold
+	border: none
+	cursor: pointer
+	font-size: 10px
+	font-family: "Calluna Sans W01 Black"
+	text-transform: uppercase
+
+.contact-info
+	padding: 25px 0 0
+	p
+		font-size: 12px
+		color: $theme-color
+		line-height: 22px
+		margin: 0
+	
+	a
+		color: #72672d
+	
+
+#home-page #main
+	padding:20px 0 10px
+	min-height:inherit
+	.small-article p
+		line-height:18px
+	
+	.box-section
+		min-height:190px
+		margin:10px 0 0 15px
+	
+	
+.slider-outer
+	background: #188eef url(../images/slider-shadow.png) repeat-x
+
+.slider-wrap
+	background: url(../images/slider-photo.png) center top no-repeat
+
+.slider-section
+	height: 443px
+	h2
+		font-size: 43px
+		color: $white
+		font-weight: normal
+		margin: 0 0 25px
+		font-family: "NewBaskervilleW01-Roman"
+		span
+			display: block
+			font-size: 22px
+			color: $theme-dark-color
+			line-height: 1.2
+			margin: 0 0 8px
+			font-family: "CallunaSansW01-Regular"
+		
+	
+	p
+		font-size: 16px
+		color: $theme-dark-color
+		line-height: 30px
+		border-top: 1px dashed $theme-dark-color
+		margin: 0 50px 0 0
+		padding: 17px 0 0
+		font-family: "CallunaSansW01-Regular"
+		span
+			text-transform: uppercase
+			color: $white
+		
+	
+
+.slide-info
+	padding: 100px 0 0 34px
+	width: 525px
+
+#footer
+	background: url(../images/footer-bot.png) left bottom repeat-x
+	padding-bottom: 18px
+	color: #616161
+	p
+		margin: 0 0 5px
+		line-height: 18px
+		font-size: 11px
+		color: $gray
+	
+	span
+		color: $golden
+	
+
+.footer-nav-wrap
+	background: $white
+	border-top: 1px solid #d9d9d9
+	border-bottom: 1px solid #d9d9d9
+	padding: 10px 0
+	font-size: 12px
+
+.footer-nav
+	padding-left: 15px
+	li
+		float: left
+		margin-right: 45px
+		&.right-item
+			margin-right: 0
+		
+		&.active a
+			color: $gray
+		
+	
+	a
+		color: $theme-dark-color
+		font-family: "CallunaSansW01-Semibold 904946"
+		&:hover
+			color: $golden
+		
+	
+
+.footer-nav-right
+	padding-right: 10px
+	ul
+		float: right
+	
+	li
+		float: left
+		line-height: 1
+		border-right: 1px solid #225869
+		padding-right: 8px
+		margin-right: 8px
+		&.right-item
+			border-right: none
+			padding-right: 0
+			margin-right: 0
+		
+	
+	a
+		color: $gray
+		display: inline-block
+		line-height: 1
+		&:hover
+			text-decoration: underline
+		
+	
+
+.footer-mid-wrap
+	background: $white url(../images/footer-bg.png) repeat-x
+	padding: 12px 0 10px
+	min-height: 72px
+
+.footer-left
+	padding-left: 15px
+
+.header-right
+	text-align: right
+	padding-right: 10px
+
+
+.fl float:left
+.fr float:right
+.cl clear:both font-size:0 height:0 
+.clearfix:after 
+	clear: both
+	content: ' '
+	display: block
+	font-size: 0
+	line-height: 0
+	visibility: hidden
+	width: 0
+	height: 0
+
+.center  text-align:center 
+.right  text-align:right 
+.top vertical-align:top 
+.middle  vertical-align:middle 
+$media (min-width: 950px) 
+.row
+	max-width:980px
+
+
+$media (max-width: 900px) 
+.row
+	max-width:760px
+
+.logo
+	width:300px
+
+#nav-wrap
+	li
+		margin-right:5px
+	
+
+#nav-wrap a
+	padding:8px 7px
+
+.slider-section
+	h2
+		font-size:35px
+		
+	p
+		margin-right:100px
+		
+
+.box-section
+	padding:20px 15px 35px 20px
+
+.footer-nav
+	li
+		margin-right:15px
+	
+
